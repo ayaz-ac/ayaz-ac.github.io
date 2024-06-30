@@ -3,10 +3,19 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
+plugins:
+  - jekyll-redirect-from
+  - jekyll-polyglot
+
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: fr-FR
+lang: en
+
+languages: ["en", "fr"] # Languages you want to support
+default_lang: "en" # Default language of the content
+exclude_from_localization: ["javascript", "images", "css", "sitemap.xml"] # Folders to exclude from multilingual functionality
+parallel_localization: true # Not very significant
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Europe/Paris
@@ -34,7 +43,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Ayaz ABDUL CADER 
+  name: Ayaz ABDUL CADER
   email: user@example.com # change to your email address
   links:
     # The first element serves as the copyright owner's link

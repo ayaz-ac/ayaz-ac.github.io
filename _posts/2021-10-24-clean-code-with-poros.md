@@ -1,8 +1,8 @@
 ---
-lang: fr
+lang: en
 page_id: poro
-permalink: /posts/les-poro-pour-un-code-propre
-title: Les PORO pour un code propre
+permalink: /posts/clean-code-with-poros
+title: Clean code with poros
 date: 2021-10-24
 categories: [Ruby On Rails]
 author: ayaz
