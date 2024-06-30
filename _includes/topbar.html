@@ -37,19 +37,6 @@
     </nav>
     <!-- endof #breadcrumb -->
 
-    <div>
-      {% for lang in site.languages %}
-        {% assign lang_name = site.data.locales[lang].lang_name %}
-        {% if lang != site.active_lang %}
-          {% if lang == site.default_lang %}
-            <a href=" {{ page.url }}">{{ lang_name }}</a>
-          {% else %}
-            <a href="/{{ lang }}{{ page.url }}">{{ lang_name }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-    </div>
-
     <button type="button" id="sidebar-trigger" class="btn btn-link">
       <i class="fas fa-bars fa-fw"></i>
     </button>
@@ -77,5 +64,17 @@
     <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">
       {{- site.data.locales[include.lang].search.cancel -}}
     </button>
+    <div>
+      {% for lang in site.languages %}
+        {% assign lang_name = site.data.locales[lang].lang_name %}
+        {% if lang != site.active_lang %}
+          {% if lang == site.default_lang %}
+            <a href=" {{ page.url }}">{{ lang_name }}</a>
+          {% else %}
+            <a href="/{{ lang }}{{ page.url }}">{{ lang_name }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </header>
