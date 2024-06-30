@@ -6,28 +6,26 @@ title: Clean code with poros
 date: 2021-10-24
 categories: [Ruby On Rails]
 author: ayaz
-description: J’ai récemment fait la découverte du PORO, Plain Old Ruby Object. Le principe est simple, créer une classe qui aura un seul objectif, respectant ainsi le principe SRP et permettant d’alléger le code des modèles et des contrôleurs.
+description: The PORO (Plain Old Ruby Object) concept allows you to create a class with a single responsibility. Let's apply this to Ruby on Rails!
 image: /assets/img/posts/les-poros-pour-un-code-propre/thumbnail.png
 ---
 
-## Introduction au PORO
-Lorsque l’on développe des applications web avec Ruby On Rails, on a tendance à mettre trop de logique dans le contrôleur ou dans le modèle. En construisant les applications de cette manière on fait abstraction d’un principe fondamental du *Clean code*, le [SRP (Single Responsiblity Principle)](https://fr.wikipedia.org/wiki/Principe_de_responsabilit%C3%A9_unique). Le fait d’avoir une classe qui doit gérer plusieurs comportements, rend l’application difficilement maintenable, testable et y ajouter de nouvelles fonctionnalités devient un vrai cauchemar.
+## Introduction to PORO
+When developing web applications with Ruby on Rails, there is a tendency to cram too much logic into controllers or models. This approach neglects a fundamental principle of *Clean Code*: the [SRP (Single Responsibility Principle)](https://fr.wikipedia.org/wiki/Principe_de_responsabilit%C3%A9_unique). When a class is responsible for multiple behaviors, the application becomes challenging to maintain, test, and extend with new features.
 
-J’ai récemment fait la découverte du **PORO**, Plain Old Ruby Object. Le principe est simple, créer une classe qui aura un seul objectif, respectant ainsi le principe SRP et permettant d’alléger le code des modèles et des contrôleurs.
-
-## Cas d'utilisation
-Imaginons une application où vous avez un modèle *User*:
+## Use case
+Let's imagine an application where you have a *User* model:
 ```ruby
 class User < ApplicationRecord
 end
 ```
-Un utilisateur possède un attribut role pouvant prendre comme valeur: admin, premium ou guest. L’administrateur doit pouvoir:
-- Supprimer un utilisateur à l’exception d’un autre administrateur.
-- Changer le rôle d’un utilisateur pour le passer de *guest* à *premium*.
+A user has a role attribute that can be: admin, premium, or guest. The admin should be able to:
+- Delete a user, except for another admin.
+- Change a user's role from *guest* to *premium*.
 
-Si on respecte le principe *SRP*, on ne peut pas créer ces méthodes dans le modèle User, car ce dernier a pour unique but de gérer les utilisateurs peu importe leurs rôles. Nous allons donc créer un **PORO** pour gérer les actions des administrateurs.
+To adhere to the *SRP* principle, we cannot create these methods in the User model, as its sole purpose is to manage users regardless of their roles. Therefore, we will create a **PORO** to handle admin actions.
 
-On créer d’abord un fichier `admin.rb` dans *app/models/user*. Pour plus de clarté nous mettrons la classe Admin dans un module User: 
+First, create an `admin.rb` file in `app/models/user`. For clarity, we will place the *Admin* class within a *User* module:
 ```ruby
 module User
   class Admin
@@ -47,25 +45,24 @@ module User
   end
 end
 ```
-
-Pour utiliser un **PORO** dans un contrôleur, il faut d'abord initialiser l'instance:
+To use a **PORO** in a controller, you first need to initialize the instance.
 ```ruby
-# current_user correspond à l'administrateur connecté
+# current_user is the connected admin 
 @admin = User::Admin.new(current_user)
 ```
 
-Puis on peut appeler ses méthodes:
+Then you can call its methods:
 ```ruby
-# user_to_delete est une instance d'un User
+# user_to_delete is an instance of a User
 @admin.delete_user(user_to_delete)
 
-# user_to_update est une instance d'un User
+# user_to_update is an instance of a User
 @admin.update_to_premium(user_to_update)
 ```
 ## Conclusion
-En utilisant les PORO dans une application Ruby On Rails, on assure:
-- Le respect du principe de *SRP*
-- Une sépration logique des méthodes
-- Une amélioration de la lisibilité du code
-- Une meilleure maintenabilité de l’application
-- Faciliter la couverture de test pour l’ensemble du projet
+Using POROs in a Ruby on Rails application ensures:
+- Adherence to the *SRP* principle
+- Logical separation of methods
+- Improved code readability
+- Better maintainability of the application
+- Easier test coverage for the entire project
