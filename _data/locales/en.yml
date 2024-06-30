@@ -9,6 +9,9 @@ layout:
   category: Category
   tag: Tag
 
+sidebar:
+  tagline: Entrepreneurship, SaaS and Tech
+
 # The tabs of sidebar
 tabs:
   # format: <filename_without_extension>: <value>
