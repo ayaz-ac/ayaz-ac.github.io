@@ -50,12 +50,16 @@ Pour finir il suffit d'ajouter dans votre `application.html.erb`
 
 # Exemple d'utilisation
 Pour afficher le contenu d'une page dans la modal, il suffit de cibler la TurboFrame `:modal` et d'insérer le contenu avec des `content_for`:
-- `show.html.erb`
+- `index.html.erb`
   ```erb
-  <%= link_to edit_post_path(post), data: { turbo_frame: :modal } %>
+  <% @posts.each do |post| %>
+    <%= link_to post_path(post), data: { turbo_frame: :modal } do %>
+      <h1> <%= post.title %> </h1>
+    <% end %>
+  <% end %>
   ```
 
-- `edit.html.erb`
+- `show.html.erb`
   ```erb
   <% content_for(:title) { @post.title } %>
   <% content_for(:body) do %>
