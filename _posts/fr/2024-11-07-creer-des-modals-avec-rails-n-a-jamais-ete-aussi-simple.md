@@ -7,7 +7,7 @@ date: 2024-11-07
 categories: [Ruby on Rails]
 author: ayaz
 description: "Setup rapide d’une modal en Rails avec Turbo Frame et TailwindCSS: 2 fichiers, 3 lignes de JavaScript, et tadaaa 🎉"
-image: /assets/img/posts/creer-des-modals-avec-rails-n-a-jamais-ete-aussi-simple/thumbnail.jpg
+image: /assets/img/posts/creer-des-modals-avec-rails-n-a-jamais-ete-aussi-simple/thumbnail.png
 ---
 
 # Mise en place
