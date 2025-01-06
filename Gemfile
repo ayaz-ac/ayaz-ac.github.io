@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'jekyll-theme-chirpy', '~> 7.0', '>= 7.0.1'
+gem 'jekyll-theme-chirpy', '~> 7.2', '>= 7.2.4'
 
 group :jekyll_plugins do
   gem 'jekyll-polyglot', git: 'https://github.com/ayaz-ac/polyglot', branch: 'master'
