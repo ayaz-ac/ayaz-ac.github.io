@@ -64,6 +64,8 @@ Mais sache que la meilleure manière d’apprendre, c’est de faire. Ce n’est
 # Un chemin sineux mais pas impossible
 Monter un SaaS, c’est LONG et les statistiques de réussite sont clairement contre toi. Cependant, tu en apprendras beaucoup sur toi et tu progresseras énormément d’un point de vue technique.
 
-Il n’existe pas de recette qui assure la réussite d’un SaaS. Comme tout projet entrepreneurial, il y a une part d’instinct, où les décisions que tu prendras vont grandement influencer l’avenir de ton projet. Et cette part d’instinct, il n’y a qu’un moyen de l’améliorer : en créant d’autres projets. Chaque nouveau projet que tu développeras sera meilleur que le précédent, car tu accumules de l’expérience.
+Il n’existe pas de recette qui assure la réussite d’un SaaS. Comme tout projet entrepreneurial, il y a une part d’instinct, où les décisions que tu prendras vont grandement influencer l’avenir de ton projet. Et cette part d’instinct, il n’y a qu’un moyen de l’améliorer : en créant d’autres projets.
+
+Chaque nouveau projet que tu développeras sera meilleur que le précédent, car tu accumules de l’expérience.
 
 Lance-toi le plus tôt possible, tu n’as rien à perdre si ce n’est ton temps ;)
