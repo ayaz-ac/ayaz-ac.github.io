@@ -18,7 +18,7 @@ Si j’écris cet article, c’est parce que je fais aussi partie de ces devs qu
 # Contexte
 Avant de rentrer dans le vif du sujet, je vais me présenter afin que tu puisses avoir le contexte pour le reste de l’article.
 
-D’ailleurs, si tu cherches ou que tu connais quelqu’un qui cherche un freelance Ruby On Rails, tu peux me contacter ici :
+D’ailleurs, si tu cherches ou que tu connais quelqu’un qui cherche un freelance Ruby On Rails, tu peux me contacter ici : `ayaz(point)indie(arobase)proton(point)me`
 
 La liberté que m’apporte le statut de freelance me permet globalement de tester plusieurs idées de SaaS en peu de temps. Ce qui n’est pas forcément le cas de tous les statuts et situations professionnels.
 
@@ -57,7 +57,11 @@ Sois patient, car c’est un requis lorsque tu entreprends, mais ne le sois pas 
 Sur les réseaux sociaux, tu verras qu’il existe de nombreuses personnes qui te vendent “la formation complète pour lancer ton SaaS” ou encore “le template ultime pour développer ton SaaS”. Sache que toute l’information ou l’aide dont tu as besoin se trouve gratuitement sur Internet. Que ça soit dans des subreddits, des Discord ou des chaînes YouTube, tout est accessible en quelques clics.
 
 Voici les ressources que je recommande si tu veux en apprendre plus sur les SaaS :
-- lister les ressources en question
+- [Karim Matrah](https://www.youtube.com/@KarimMatrah)
+- [Benjamin Code](https://www.youtube.com/@BenjaminCode)
+- [Simon Høiberg](https://www.youtube.com/@SimonHoiberg)
+- [Le Dev Ultime](https://x.com/ledevultime)
+- [Marc Köhlbrugge](https://x.com/marckohlbrugge)
 
 Mais sache que la meilleure manière d’apprendre, c’est de faire. Ce n’est pas en regardant 4 h de vidéo YouTube que tu vas réellement apprendre, il faut que tu te lances !
 
