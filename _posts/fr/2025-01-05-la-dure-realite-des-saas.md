@@ -57,11 +57,11 @@ Sois patient, car c’est un requis lorsque tu entreprends, mais ne le sois pas 
 Sur les réseaux sociaux, tu verras qu’il existe de nombreuses personnes qui te vendent “la formation complète pour lancer ton SaaS” ou encore “le template ultime pour développer ton SaaS”. Sache que toute l’information ou l’aide dont tu as besoin se trouve gratuitement sur Internet. Que ça soit dans des subreddits, des Discord ou des chaînes YouTube, tout est accessible en quelques clics.
 
 Voici les ressources que je recommande si tu veux en apprendre plus sur les SaaS :
-- [Karim Matrah](https://www.youtube.com/@KarimMatrah)
-- [Benjamin Code](https://www.youtube.com/@BenjaminCode)
-- [Simon Høiberg](https://www.youtube.com/@SimonHoiberg)
-- [Le Dev Ultime](https://x.com/ledevultime)
-- [Marc Köhlbrugge](https://x.com/marckohlbrugge)
+- [Karim Matrah](https://www.youtube.com/@KarimMatrah){:target="_blank"}
+- [Benjamin Code](https://www.youtube.com/@BenjaminCode){:target="_blank"}
+- [Simon Høiberg](https://www.youtube.com/@SimonHoiberg){:target="_blank"}
+- [Le Dev Ultime](https://x.com/ledevultime){:target="_blank"}
+- [Marc Köhlbrugge](https://x.com/marckohlbrugge){:target="_blank"}
 
 Mais sache que la meilleure manière d’apprendre, c’est de faire. Ce n’est pas en regardant 4 h de vidéo YouTube que tu vas réellement apprendre, il faut que tu te lances !
 
