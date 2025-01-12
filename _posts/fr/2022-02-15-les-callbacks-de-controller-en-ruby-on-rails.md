@@ -5,6 +5,7 @@ permalink: /posts/les-callbacks-de-controller-en-ruby-on-rails
 title: Les callbacks de controller en Ruby on Rails
 date: 2022-02-15
 categories: [Ruby on Rails]
+tags: [Tutorial]
 author: ayaz
 description: Qu'est-ce qu'un callback et comment les utiliser efficacement dans un controller ? Voyons ça ensemble :)
 image: /assets/img/posts/les-callbacks-de-controller-en-ruby-on-rails/thumbnail.jpg

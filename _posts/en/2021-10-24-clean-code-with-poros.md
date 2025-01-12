@@ -5,6 +5,7 @@ permalink: /posts/clean-code-with-poros
 title: Clean code with poros
 date: 2021-10-24
 categories: [Ruby on Rails]
+tags: [Tutorial]
 author: ayaz
 description: The PORO (Plain Old Ruby Object) concept allows you to create a class with a single responsibility. Let's apply this to Ruby on Rails!
 image: /assets/img/posts/les-poros-pour-un-code-propre/thumbnail.png

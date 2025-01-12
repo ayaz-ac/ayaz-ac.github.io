@@ -5,6 +5,7 @@ permalink: /posts/setting-up-a-modal-with-turbo-frame-and-tailwindcss-in-rails
 title: Setting Up a Modal with Turbo Frame and TailwindCSS in Rails
 date: 2024-11-07
 categories: [Ruby on Rails]
+tags: [Tutorial]
 author: ayaz
 description: "Quick setup for a modal in Rails using Turbo Frame and TailwindCSS: two files, three lines of JavaScript, and voilà a ready-to-go interactive modal!"
 image: /assets/img/posts/creer-des-modals-avec-rails-n-a-jamais-ete-aussi-simple/thumbnail.jpg

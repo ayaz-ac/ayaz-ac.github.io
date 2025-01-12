@@ -5,6 +5,7 @@ permalink: /posts/les-poro-pour-un-code-propre
 title: Les PORO pour un code propre
 date: 2021-10-24
 categories: [Ruby on Rails]
+tags: [Tutorial]
 author: ayaz
 description: J’ai récemment fait la découverte du PORO, Plain Old Ruby Object. Le principe est simple, créer une classe qui aura un seul objectif, respectant ainsi le principe SRP et permettant d’alléger le code des modèles et des contrôleurs.
 image: /assets/img/posts/les-poros-pour-un-code-propre/thumbnail.png
