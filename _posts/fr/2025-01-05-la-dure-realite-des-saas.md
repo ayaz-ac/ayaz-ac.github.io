@@ -5,6 +5,7 @@ permalink: /posts/la-dure-realite-des-saas
 title: La dure réalité des SaaS
 date: 2025-01-05
 categories: [Entrepreneuriat]
+tags: [SaaS]
 author: ayaz
 description: "Générer des revenus passifs avec un SaaS, un rêve pour beaucoup de développeurs. Mais est-ce un rêve atteignable ?"
 image: /assets/img/posts/la-dure-realite-des-saas/thumbnail.jpg
@@ -20,7 +21,7 @@ Avant de rentrer dans le vif du sujet, je vais me présenter afin que tu puisses
 
 D’ailleurs, si tu cherches ou que tu connais quelqu’un qui cherche un freelance Ruby On Rails, tu peux me contacter ici : `ayaz(point)indie(arobase)proton(point)me`
 
-La liberté que m’apporte le statut de freelance me permet globalement de tester plusieurs idées de SaaS en peu de temps. Ce qui n’est pas forcément le cas de tous les statuts et situations professionnels.
+La liberté que m’apporte le statut de freelance me permet de tester plusieurs idées de SaaS en peu de temps. Ce qui n’est pas forcément le cas de tous les statuts et situations professionnels.
 
 De plus, j’ai toujours eu cette appétence pour l’entrepreneuriat en participant à des concours et en tentant de monter des projets, des SaaS ou encore un podcast.
 
@@ -32,7 +33,7 @@ Il faut que tu appliques le principe de Pareto tout au long de ton projet : 80 %
 C’est à cela que sert le Minimal Viable Product (MVP) ou Produit Minimum Viable en français. Le concept est simple : c’est une version minimale de ton produit qui ne contient que ta fonctionnalité principale. J’insiste bien sur “ta fonctionnalité principale”, car on a souvent tendance à ajouter plus de fonctionnalités que nécessaire. Il faut faire l’effort de réduire le plus possible le scope de tes fonctionnalités. Moins tu en as, plus vite tu pourras tester et vendre ton idée.
 
 # Sortir de sa zone de confort avec le marketing
-C’est un concept bien connu de tous : les développeurs sont mauvais en marketing. Ce qui nous intéresse en tant que développeurs, c’est simplement plonger dans le code et sortir des fonctionnalités à la pelle.
+C’est un fait bien connu de tous : les développeurs sont mauvais en marketing. Ce qui nous intéresse en tant que développeurs, c’est simplement plonger dans le code et sortir des fonctionnalités à la pelle.
 
 La réalité, c’est que tu auras beau sortir autant de fonctionnalités que tu le souhaites, si personne n’entend parler de ton produit, tu feras 0 vente. Le marketing est donc essentiel afin de faire connaître ton projet à tes futurs clients. Mais comme je te l’ai dit précédemment, les développeurs sont pour la plupart mauvais dans ce domaine.
 
@@ -63,7 +64,7 @@ Voici les ressources que je recommande si tu veux en apprendre plus sur les SaaS
 - [Le Dev Ultime](https://x.com/ledevultime){:target="_blank"}
 - [Marc Köhlbrugge](https://x.com/marckohlbrugge){:target="_blank"}
 
-Mais sache que la meilleure manière d’apprendre, c’est de faire. Ce n’est pas en regardant 4 h de vidéo YouTube que tu vas réellement apprendre, il faut que tu te lances !
+Mais sache que la meilleure manière d’apprendre, c’est de faire. Ce n’est pas en regardant 4h de vidéos YouTube que tu vas réellement apprendre, il faut que tu te lances !
 
 # Un chemin sineux mais pas impossible
 Monter un SaaS, c’est LONG et les statistiques de réussite sont clairement contre toi. Cependant, tu en apprendras beaucoup sur toi et tu progresseras énormément d’un point de vue technique.
