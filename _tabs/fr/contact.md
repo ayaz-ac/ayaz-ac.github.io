@@ -3,6 +3,7 @@ lang: fr
 page_id: contact
 permalink: /me-contacter
 title: Contact
+icon: fas fa-envelope
 order: 5
 ---
 <div class="contact-page">
@@ -10,7 +11,7 @@ order: 5
     <label for="name">Nom :</label>
     <input type="text" id="name" name="name" required />
 
-    <label for="email">Email :</label>
+    <label for="email">E-mail :</label>
     <input type="email" id="email" name="email" required />
 
     <label for="message">Message :</label>

@@ -3,6 +3,7 @@ lang: en
 page_id: contact
 permalink: /contact-me
 title: Contact
+icon: fas fa-envelope
 order: 5
 ---
 <div class="contact-page">
