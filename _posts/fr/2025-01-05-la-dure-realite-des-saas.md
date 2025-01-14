@@ -19,7 +19,7 @@ Si j’écris cet article, c’est parce que je fais aussi partie de ces devs qu
 # Contexte
 Avant de rentrer dans le vif du sujet, je vais me présenter afin que tu puisses avoir le contexte pour le reste de l’article.
 
-D’ailleurs, si tu cherches ou que tu connais quelqu’un qui cherche un freelance Ruby On Rails, tu peux me contacter ici : `ayaz(point)indie(arobase)proton(point)me`
+D’ailleurs, si tu cherches ou que tu connais quelqu’un qui cherche un freelance Ruby On Rails, [tu peux me contacter ici](/me-contacter).
 
 La liberté que m’apporte le statut de freelance me permet de tester plusieurs idées de SaaS en peu de temps. Ce qui n’est pas forcément le cas de tous les statuts et situations professionnels.
 
