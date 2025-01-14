@@ -1,0 +1,49 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Styles for the contact page */
+.contact-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#contactForm label {
+  margin-bottom: 0.5rem;
+}
+
+#contactForm input,
+#contactForm textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contactForm button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#contactForm button:hover {
+  background-color: #005f99;
+}
