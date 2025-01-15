@@ -32,7 +32,7 @@ You need to apply the Pareto principle throughout your project: 80% of results c
 
 That’s where the Minimal Viable Product (MVP) comes in. The concept is simple: it’s the minimal version of your product that includes only your core functionality. I emphasize on "core functionality" because we often tend to add more features than necessary. You must make an effort to reduce the scope of your features as much as possible. The fewer you have, the faster you can test and sell your idea.
 
-# Stepping Out of Your Comfort Zone with Marketing
+# Stepping out of your comfort zone with marketing
 It’s a well-known fact: developers are bad at marketing. What interests us as developers is diving into the code and deploying features.
 
 The reality is, no matter how many features you release, if no one hears about your product, you’ll make zero sales. Marketing is therefore essential to make your project known to your future customers. But as I mentioned earlier, most developers are not skilled in this area.
@@ -43,7 +43,7 @@ As the name suggests, the idea is to build your application in public. This mean
 
 However, communicating as part of building in public is also work! You’ll need to communicate daily and be consistent. The beginnings can be tough because you may not yet have a community following your progress. But this is precisely when you need to hang in there and not give up!
 
-# Patience is a Virtue
+# Patience is a virtue
 Building a SaaS is a (very) long-term investment, mainly because it takes time to create a good product! From developing your MVP to iterating on it until you reach your PMF (Product Market Fit), it will take several months.
 
 Of course, the fact that you’re not working full-time on your SaaS significantly impacts the project’s duration.
