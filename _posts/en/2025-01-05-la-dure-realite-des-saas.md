@@ -19,7 +19,7 @@ I’m writing this article because I am one of those dev who have embarked on th
 # Context
 Before diving into the heart of the matter, let me introduce myself so you have the context for the rest of the article.
 
-By the way, if you’re looking for or know someone who’s looking for a freelance Ruby on Rails developer, [you can contact me here](/me-contacter).
+By the way, if you’re looking for or know someone who’s looking for a freelance Ruby on Rails developer, [you can contact me here](/contact-me).
 
 The freedom that freelancing gives me allows me to test several SaaS ideas in a short time—something not necessarily possible in other types of contracts.
 
