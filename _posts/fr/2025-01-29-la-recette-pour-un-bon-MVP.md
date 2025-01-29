@@ -2,7 +2,7 @@
 lang: fr
 page_id: recette-pour-un-mvp
 permalink: /posts/la-recette-pour-un-bon-mvp
-title: Le recette pour un bon MVP
+title: La recette pour un bon MVP
 date: 2025-01-29
 categories: [Entrepreneuriat]
 tags: [SaaS]
@@ -18,10 +18,11 @@ moins une fois, voire même quotidiennement. Un SaaS, c’est une application qu
 est un très bon exemple : les utilisateurs paient un abonnement mensuel et, en retour, ils ont accès à un catalogue de films et de séries.
 
 Cela fait maintenant quelques années que je développe des SaaS tout en étant freelance en tant que développeur Ruby On Rails.
-D’ailleurs, si tu cherches ou que tu connais quelqu’un qui cherche un freelance Ruby On Rails, [tu peux me contacter ici](/me-contacter).
+D’ailleurs, si tu cherches ou que tu connais quelqu’un qui cherche un freelance Ruby On Rails,
+[tu peux me contacter ici](/me-contacter){:target="_blank"}.
 
 Si l’aventure du SaaS t’intéresse, il faut savoir que c’est un chemin avec beaucoup d’a priori.
-C’est d’ailleurs pour cette raison que j’ai écrit un article dessus :
+C’est d’ailleurs pour cette raison que j’ai écrit un [article](la-dure-realite-des-saas){:target="_blank"} dessus.
 
 # Définition
 MVP est un acronyme anglais qui signifie “Minimum Viable Product”, si on devait le traduire en français, ça donnerait “Produit Minimum Viable”.
