@@ -64,7 +64,7 @@ légèrement différente.
 Peu importe la taille de ton marché, il y a des principes qui, selon moi, sont essentiels au développement d’un bon MVP.
 
 Avant de te les détailler, il faut que je te parle du projet de SaaS sur lequel je travaille en ce moment :
-[*ProfPlanner*](https://profplanner.com){:target="_blank"}.
+[ProfPlanner](https://profplanner.com){:target="_blank"}.
 Une application web destinée aux professeurs afin de les aider à optimiser leur temps et à simplifier leur organisation. À l’heure où j’écris cet
 article, mon associé et moi travaillons justement sur le MVP. Pour chaque principe que je vais te lister, je te présenterai comment nous l’avons 
 appliqué sur *ProfPlanner*, afin que tu aies un cas concret sur lequel t’appuyer.
@@ -101,8 +101,9 @@ projet. Il existe trois manières d’impliquer réellement un utilisateur dans 
 - Réputation : Te présenter un collègue ou une personne importante .
 - Argent : Achat, précommande ou investissement financier.
 
-Je te conseille vivement la lecture de [*The Mom Test* de Rob Fitzpatrick](https://www.momtestbook.com/){:target="_blank"}, qui aborde justement ces thèmes-là. Plus globalement, cet ouvrage
-va t’apprendre à poser les bonnes questions à ton marché afin de savoir si ton produit est utile. C’est un *must-have* pour tout entrepreneur !
+Je te conseille vivement la lecture de [The Mom Test de Rob Fitzpatrick](https://www.momtestbook.com/){:target="_blank"}, qui aborde justement ces
+thèmes-là. Plus globalement, cet ouvrage va t’apprendre à poser les bonnes questions à ton marché afin de savoir si ton produit est utile.
+C’est un *must-have* pour tout entrepreneur !
 
 De notre côté avec *ProfPlanner* on a opté pour une étape supplémentaire avant le MVP en développant un *POC (Proof Of Concept)*. L’idée était de
 valider l’existence du problème chez nos utilisateurs. On a donc créé et mis en vente un template Notion permettant la gestion des cours, la gestion
@@ -113,8 +114,8 @@ On a souvent tendance à penser que le lancement d’un projet est quelque chose
 symbolique et y mettre toute notre énergie.
 
 En réalité, rien ne t’empêche de faire plusieurs lancements, et c’est d’ailleurs tout à ton avantage, car cela te permet de communiquer plusieurs
-fois sur ton projet. C’est une technique beaucoup utilisée sur [*Product Hunt*](https://www.producthunt.com/){:target="_blank"} : plusieurs projets font un lancement pour chaque nouvelle 
-fonctionnalité qu’ils développent.
+fois sur ton projet. C’est une technique beaucoup utilisée sur [Product Hunt](https://www.producthunt.com/){:target="_blank"} : plusieurs projets
+font un lancement pour chaque nouvelle fonctionnalité qu’ils développent.
 
 ## Rater fait partie de l'apprentissage
 Comme tout aspect de la vie d’entrepreneur, tout n’est qu’expérience. Tu vas peut-être te rater plusieurs fois, mais tu auras beaucoup appris
