@@ -7,7 +7,7 @@ date: 2025-03-02
 categories: [Rails]
 tags: [Self-Host, Coolify]
 author: ayaz
-description: ""
+description: "Coolify is the perfect open-source solution for easily deploying Ruby on Rails apps through self-hosting, at a low cost and with great flexibility."
 image: /assets/img/posts/deployer-une-application-ruby-on-rails-avec-coolify/thumbnail.jpg
 ---
 ## Introduction
