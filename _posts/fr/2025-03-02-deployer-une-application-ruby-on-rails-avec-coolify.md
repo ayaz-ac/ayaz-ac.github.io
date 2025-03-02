@@ -1,14 +1,14 @@
 ---
 lang: fr
-page_id: deployer-rails-coolify
+page_id: deploiement-rails-coolify
 permalink: /posts/deployer-une-application-ruby-on-rails-avec-coolify
 title: Déployer une application RubyOnRails avec Coolify
 date: 2025-03-02
 categories: [Rails]
-tags: [Self-Host, Coolify]
+tags: [Self-Host, Coolify, Tutorial]
 author: ayaz
 description: ""
-image: /assets/img/posts/deployer-rails-coolify/thumbnail.jpg
+image: /assets/img/posts/deployer-une-application-ruby-on-rails-avec-coolify/thumbnail.jpg
 ---
 
 ## Introduction
@@ -26,12 +26,12 @@ Face à cette situation, une alternative devient incontournable : héberger soi-
 Mais une question se pose : comment faire du self-hosting sans galérer avec la configuration ?
 Traditionnellement, des outils comme Capistrano ou Kamal sont utilisés, mais ils nécessitent une configuration avancée (serveur, accès SSH, reverse proxy…).
 
-Bonne nouvelle : il existe une alternative bien plus simple qui prend en charge toutes ces contraintes tout en gardant la flexibilité d’Heroku… Coolify.
+Bonne nouvelle : il existe une alternative bien plus simple qui prend en charge toutes ces contraintes tout en gardant la flexibilité d’Heroku… **Coolify**.
 
 ## Qu'est-ce que Coolify ?
 [Coolify](https://coolify.io){:target="_blank"} est une alternative open-source et gratuite aux PaaS comme Heroku. Il permet de déployer facilement presque n'importe quelle application, quelle que soit la technologie utilisée, et ce, en seulement quelques clics.
 
-Deux options s'offrent à toi pour l'utiliser : en mode cloud (5 $/mois) ou en mode self-hosted. Personnellement, j'ai choisi d'héberger Coolify moi-même sur un VPS de chez Hostinger avec un [KVM2](https://www.hostinger.fr/vps){:target="_blank"}.
+Deux options s'offrent à toi pour l'utiliser : en mode **cloud** (5 $/mois) ou en mode **self-hosted**. Personnellement, j'ai choisi d'héberger Coolify moi-même sur un VPS de chez Hostinger avec un [KVM2](https://www.hostinger.fr/vps){:target="_blank"}.
 
 Si tu souhaites sécuriser et configurer ton VPS avant d'y installer Coolify, je te recommande cette vidéo: [Set up and Secure Your Own Server](https://youtu.be/Q1Y_g0wMwww?feature=shared){:target="_blank"}. Concernant l'installation de Coolify, Syntax a réalisé un excellent guide vidéo: 
 
@@ -39,29 +39,29 @@ Pour configurer et sécuriser ton VPS, je te recommande de suivre cette vidéo: 
 
 ## Déployer une application Ruby On Rails
 ### Créer un nouveau projet et un environnement
-![](/assets/img/posts/deployer-rails-coolify/step_1.png)
-![](/assets/img/posts/deployer-rails-coolify/step_2.png)
+![](/assets/img/posts/deployer-une-application-ruby-on-rails-avec-coolify/step_1.png)
+![](/assets/img/posts/deployer-une-application-ruby-on-rails-avec-coolify/step_2.png)
 
 ### Mise en place de la base de données
 Pour créer une base de données dans un environnement, rien de plus simple, il suffit d’ajouter une ressource en recherchant le nom de ton SGBD (PostgreSQL, MySQL, etc.).
-![](/assets/img/posts/deployer-rails-coolify/step_3.png)
-![](/assets/img/posts/deployer-rails-coolify/step_4.png)
+![](/assets/img/posts/deployer-une-application-ruby-on-rails-avec-coolify/step_3.png)
+![](/assets/img/posts/deployer-une-application-ruby-on-rails-avec-coolify/step_4.png)
 
 ### Déploiement avec GitHub
 Afin que Coolify déploie ton projet, il faut d’abord créer une application GitHub pour accéder à tes repositories. Tu peux faire cela directement depuis le menu “Sources”.
-![](/assets/img/posts/deployer-rails-coolify/step_5.png)
-![](/assets/img/posts/deployer-rails-coolify/step_6.png)
+![](/assets/img/posts/deployer-une-application-ruby-on-rails-avec-coolify/step_5.png)
+![](/assets/img/posts/deployer-une-application-ruby-on-rails-avec-coolify/step_6.png)
 
 ### Déploiement d'une application
 Au même titre que ta base de données, une application est aussi considérée comme une ressource par Coolify.
-![](/assets/img/posts/deployer-rails-coolify/step_7.png)
+![](/assets/img/posts/deployer-une-application-ruby-on-rails-avec-coolify/step_7.png)
 
-Pour récupérer ton projet depuis GitHub, tu peux sélectionner “Private Repository (with GitHub App) depuis la liste des services. Coolify se chargera par la suite de cloner ton repo sur ton serveur.
-![](/assets/img/posts/deployer-rails-coolify/step_8.png)
-![](/assets/img/posts/deployer-rails-coolify/step_9.png)
+Pour récupérer ton projet depuis GitHub, tu peux sélectionner **Private Repository (with GitHub App)** depuis la liste des services. Coolify se chargera par la suite de cloner ton repo sur ton serveur.
+![](/assets/img/posts/deployer-une-application-ruby-on-rails-avec-coolify/step_8.png)
+![](/assets/img/posts/deployer-une-application-ruby-on-rails-avec-coolify/step_9.png)
 
-Ici il faut bien que tu fasses attention à sélectionner “Dockerfile” dans le “Build Pack”, afin que Coolify se base sur ce dernier pour déployer ton application dans un container Docker.
-![](/assets/img/posts/deployer-rails-coolify/step_10.png)
+Ici il faut bien que tu fasses attention à sélectionner **Dockerfile** dans le “Build Pack”, afin que Coolify se base sur ce dernier pour déployer ton application dans un container Docker.
+![](/assets/img/posts/deployer-une-application-ruby-on-rails-avec-coolify/step_10.png)
 
 Si tu n’as pas de Dockerfile déjà configuré, tu peux adapter celui qui est généré par Rails sur les nouvelles versions. N’oublie pas de mettre à jour ta version de Ruby dans le Dockerfile.
 ```docker
@@ -132,9 +132,9 @@ CMD ["bash", "-c", "bin/rails db:prepare && bin/rails server -b '0.0.0.0'"]
 ```
 ### Variables d'environnement
 En accédant à ta ressource correspondant à ton application Rails, tu peux modifier les variables d’environnement. Pour déployer ton application Rails tu as besoin au minimum de 3 variables d’environnement:
-- DATABASE_URL: Tu peux récupérer la valeur de cette variable depuis la ressource de ta base de données. Par exemple si tu utilises PostgreSQL, il sera indiqué “Postgres URL (internal)”
-- RAILS_ENV: Habituellement la valeur sera “production”
-- RAILS_MASTER_KEY: La valeur de la master key de ton projet
+- **DATABASE_URL**: Tu peux récupérer la valeur de cette variable depuis la ressource de ta base de données. Par exemple si tu utilises PostgreSQL, il sera indiqué **Postgres URL (internal)**
+- **RAILS_ENV**: Habituellement la valeur sera “production”
+- **RAILS_MASTER_KEY**: La valeur de la master key de ton projet
 
 ### Configurer le nom de domaine
 Toujours dans la ressource de ton application tu as la possibilité d’ajouter des noms de domaine. Il suffit que tu renseignes les différents noms de domaine qui doivent pointer sur ton app, séparé par une virgule.
@@ -153,4 +153,4 @@ Grâce à Coolify, la barrière à l’entrée pour héberger soi-même ses appl
 
 Je te préviens maintenant, tu vas vouloir héberger tous les SaaS que tu paies et c’est normal on est tous passé par là haha. Afin de nourrir ta soif de “self-hosting” voici une liste d’applications open-source et gratuit que tu peux self-host: [Awesome Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted).
 
-Avec Coolify, le self-hosting n'a jamais été aussi accessible. Moins cher, plus flexible et sans contrainte. N'hésite plus et lance toi ! 😎
+Avec Coolify, le self-hosting n'a jamais été aussi accessible. Moins cher, plus flexible et sans contrainte. **N'hésite plus et lance toi!** 😎
