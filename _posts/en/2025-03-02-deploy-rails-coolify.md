@@ -11,30 +11,33 @@ description: "Coolify is the perfect open-source solution for easily deploying R
 image: /assets/img/posts/deployer-une-application-ruby-on-rails-avec-coolify/thumbnail.jpg
 ---
 ## Introduction
-For a long time, Heroku was the go-to solution for quickly and freely deploying a Ruby on Rails application. But in [November 2022](https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq){:target="_blank"}, everything changed: the platform removed its free plan, making all its services paid, even for small projects.
+Heroku was once the go-to solution for deploying a Ruby on Rails application quickly and for free. But in [November 2022](https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq){:target="_blank"}, everything changed: the platform removed its free plan, making all its services paid, even for small projects.
 
-Following this announcement, several competitors like [Fly.io](https://fly.io){:target="_blank"} emerged with limited free plans. However, they eventually followed the same path, gradually removing their free offerings.
+Following this announcement, several competitors like [Fly.io](https://fly.io){:target="_blank"} emerged with limited free plans. But they eventually followed the same path, gradually removing their free offerings.
 
-As an Indie Hacker, maintaining multiple projects online quickly becomes expensive, especially if the revenue doesn’t cover the costs.
+As an Indie Hacker in my spare time, I faced a major issue: how can I keep all my projects online at a low cost? Especially since none of my projects generate any revenue...
 
-Adding to this is another concern: GDPR compliance. Most PaaS providers host their data in the U.S., raising compliance issues for European users.
+On top of that, there’s the legal challenge: my projects target a French audience, so I need to comply with GDPR. However, most PaaS providers host their data in the United States, which creates a compliance issue for European users.
 
-### The Solution? Self-Hosting
-Given this situation, one clear alternative stands out: self-hosting your applications. With a personal server, no matter how many resources you use, your costs remain the same. Most importantly, you retain full control over your data.
+### The solution? Self-hosting
+Given this situation, one alternative stands out: hosting applications yourself (aka self-hosting). On a server, no matter how many resources you use, the cost remains the same. Most importantly, you retain full control over your data.
 
-But here’s the question: how can you self-host without struggling with complex configurations?
+Basically, I love "plug & play" solutions, so when I first heard about self-hosting, it didn’t seem appealing to me. I associated "self-hosting" with setup complexity, security concerns, proxies, etc. And, above all, I’m a developer, not a network architect 😅
 
-Traditionally, tools like Capistrano or Kamal are used for deployment, but they require advanced setup (server configuration, SSH access, reverse proxy, etc.).
+So I wondered: is it possible to self-host without struggling with configuration?
 
-Good news: there’s a much simpler alternative that handles all these challenges while offering the flexibility of Heroku… **Coolify**.
+In the Rails ecosystem, there are tools like Capistrano or, more recently, Kamal, that help with application deployment. But these tools only simplify one part of the deployment process and mainly rely on configuration files.
 
-## What is Coolify?
-[Coolify](https://coolify.io){:target="_blank"} is an open-source, free alternative to PaaS platforms like Heroku. It allows you to deploy almost any application, regardless of the technology, in just a few clicks.
+What I want is as little configuration as possible and an interface that allows me to manage all my projects on my server.
 
-You have two options to use it: **Cloud mode** ($5/month) or **Self-hosted mode**. Personally, I chose to host Coolify on my own VPS from Hostinger with a [KVM2](https://www.hostinger.fr/vps){:target="_blank"}.
+That’s when I discovered **Coolify**, a simple-to-set-up alternative (hello plug & play 👋) that meets all my needs.
 
-If you want to secure and configure your VPS before installing Coolify, I recommend this video: [Set up and Secure Your Own Server](https://youtu.be/Q1Y_g0wMwww?feature=shared){:target="_blank"}.
-For Coolify installation, Syntax has an excellent video guide: [Coolify Crash Course](https://www.youtube.com/watch?v=Q1Y_g0wMwww&t=202s){:target="_blank"}.
+## What is Coolify?  
+[Coolify](https://coolify.io){:target="_blank"} is an open-source, free alternative to PaaS providers like Heroku. It allows you to easily deploy almost **any application**, regardless of the technology used. The strength of Coolify is that it is based on Docker: each of your applications will be deployed in a container, and you can manage them through an interface.
+
+You have two options to use it: **cloud mode** ($5/month) or **self-hosted mode**. Personally, I chose to self-host Coolify on a VPS from Hostinger with a [KVM2](https://www.hostinger.fr/vps){:target="_blank"}.
+
+If you want to secure and configure your VPS before installing Coolify, I recommend this video: [Set up and Secure Your Own Server](https://youtu.be/Q1Y_g0wMwww?feature=shared){:target="_blank"}. For the Coolify installation, Syntax has made an excellent video guide: [Coolify Crash Course](https://www.youtube.com/watch?v=Q1Y_g0wMwww&t=202s){:target="_blank"}.  
 
 ## Deploying a Ruby on Rails Application
 ### Creating a New Project and an Environment
