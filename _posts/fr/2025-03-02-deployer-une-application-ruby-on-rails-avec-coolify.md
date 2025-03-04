@@ -16,25 +16,25 @@ Heroku a longtemps été la solution idéale pour déployer une application Ruby
 
 Suite à cette annonce, plusieurs concurrents comme [Fly.io](https://fly.io){:target="_blank"} ont émergé avec des plans gratuits limités. Mais ils ont aussi fini par suivre le même chemin, supprimant progressivement leurs offres gratuites.
 
-En tqnt qu'Indie Hacker à mes heures perdues, j'ai dû faire face à une problématique: comment maintenir tous mes projets en ligne à moindre coût ? Sachant que la totalité de mes projets ne génèrent aucun revenu...
+En tant qu'Indie Hacker à mes heures perdues, j'ai dû faire face à une problématique: comment maintenir tous mes projets en ligne à moindre coût ? Sachant que la totalité de mes projets ne génèrent aucun revenu...
 
-Ajoute à cela l'enjeu légale: la cible des mes projets est française, il faut donc respecter la RGPD. Or, la majorité des PaaS hébergent leurs données aux États-Unis, ce qui posent un problème de conformité pour les utilisateurs européens.
+Ajoute à cela l'enjeu légale: la cible de mes projets est française, il faut donc respecter la RGPD. Or, la majorité des PaaS hébergent leurs données aux États-Unis, ce qui pose un problème de conformité pour les utilisateurs européens.
 
 ### La solution ? Le self-hosting
 Face à cette situation, une alternative devient incontournable: héberger soi-même ses applications (aka self-hosting). Sur un serveur, peu importe le nombre de ressources utilisées, la facture reste la même. Et surtout, on garde le contrôle total sur ses données.
 
-De base je suis quelqu'un qui aime beaucoup le "plug & play", donc quand j'entends parler de self-host pour le première fois ça ne m'attire pas tant que ça. Car j'alliais le terme "self-host" à: configuration, sécurité, proxy etc. Et surtout je suis un développeur par un architect réseau 😅
+De base je suis quelqu'un qui aime beaucoup le "plug & play", donc quand j'entends parler de self-host pour la première fois ça ne m'attire pas tant que ça. Car j'associais le terme "self-host" à: configuration, sécurité, proxy etc. Et surtout, je suis un développeur, pas un architecte réseau 😅
 
-Du coup je me demandais s'il était possible de du self-hosting sans galèrer avec la configuration ?
+Du coup je me demandais s'il était possible du self-hosting sans galérer avec la configuration ?
 
-Dans l'écosystème de Rails, il existe des outils pour faciliter le déploiement d'application comme Capistrano ou plus récemment Kamal. Mais intégrer ces outils ne facilitaient qu'une seule partie du déploiement et sont principalement basé sur des fichiers de configurations.
+Dans l'écosystème de Rails, il existe des outils pour faciliter le déploiement d'application comme Capistrano ou plus récemment Kamal. Mais intégrer ces outils ne facilitais qu'une seule partie du déploiement et sont principalement basés sur des fichiers de configurations.
 
-Moi ce que je souhaite c'est avoir le moins de configuration possible et une interface me permettant de gérer tous mes projets sur mon serveur.
+Ce que je souhaite, c'est avoir le moins de configuration possible et une interface me permettant de gérer tous mes projets sur mon serveur.
 
-C'est alors que j'ai découvert **Coolify**, une alternative simple à mettre en place (hellooo plug & play 👋) et qui gère toutes mes contraintes.
+C'est alors que j'ai découvert **Coolify**, une alternative simple à mettre en place (hello plug & play 👋) et qui gère toutes mes contraintes.
 
 ## Qu'est-ce que Coolify ?
-[Coolify](https://coolify.io){:target="_blank"} est une alternative open-source et gratuite aux PaaS comme Heroku. Il permet de déployer facilement presque **n'importe quelle application**, quelle que soit la technologie utilisée. La force de Coolify c'est qu'il est basé sur l'utilisation de Docker, chacune de tes applications sera déployées dans un container et tu pourra les gérer via une interface.
+[Coolify](https://coolify.io){:target="_blank"} est une alternative open-source et gratuite aux PaaS comme Heroku. Il permet de déployer facilement presque **n'importe quelle application**, quelle que soit la technologie utilisée. La force de Coolify c'est qu'il est basé sur l'utilisation de Docker, chacune de tes applications sera déployée dans un container et tu pourras les gérer via une interface.
 
 Deux options s'offrent à toi pour l'utiliser : en mode **cloud** (5 $/mois) ou en mode **self-hosted**. Personnellement, j'ai choisi d'héberger Coolify moi-même sur un VPS de chez Hostinger avec un [KVM2](https://www.hostinger.fr/vps){:target="_blank"}.
 
